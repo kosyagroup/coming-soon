@@ -40,7 +40,7 @@
 }
 .email{
     text-align: center;
-    padding-top: 120px;
+    padding-top: 2em;
     z-index: 100;
 }
 .email p {
@@ -76,7 +76,7 @@
   text-transform: capitalize;
 }
 .social-icon {
-	margin-top: 160px;
+	margin-top: 1em;
 	padding: 25px 0;
 }
 .icon {
