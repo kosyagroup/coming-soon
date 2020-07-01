@@ -1,0 +1,44 @@
+@keyframes pulse {
+  0% {
+    background-color: #f1f1f1;
+  }
+  100% {
+    background-color: silver;
+  }
+}
+
+img.loading {
+  animation: pulse 1s ease-out alternate infinite;
+}
+
+.message {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 1.5em;
+  transform: translate(-50%, -100%);
+  transition: transform 0.25s;
+}
+
+#slow {
+  background: #ff9800;
+  color: white;
+}
+
+#offline {
+  background: #e91e63;
+  color: white;
+}
+
+#online {
+  background: #4caf50;
+  color: white;
+}
+
+body.slow #slow,
+body.offline #offline,
+body.online #online {
+  transform: translate(-50%, 0);
+}
